@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(265, 75%, 48%);
+  --second-color: hsl(18, 88%, 58%);
+  --title-color: hsl(220, 20%, 8%);
+  --text-color: hsl(220, 8%, 35%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(220, 4%, 99%);
+  --container-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Unbounded", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --h1-font-family: "Arvo";
+
+  /*========== Font weight ==========*/
+  --font-regular: 200;
+  --font-semi-bold: 600;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --h1-font-size: 2.25rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*========= Global reset ===========*/
+* {
+    margin: 0 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      background-color: var(--body-color);
+       color: var(--text-color);; 
+    }
+
+ /* ========== HEADER ================= */
+.container1 {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+    background-color: gray; 
+    background-image: url(background/close-no-processo-de-cuidado-carro\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.centro{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  height: 300px;
+  width: 500px;
+  margin-left: 200px;
+}
+
+
+.text{
+  font-size: 60px;
+  color:#ffffff
+}
+
+.text2{
+  font-size: 30px;
+  color: #edcc10;
+  box-shadow: #000;
+}
+
+
+/* . navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    background-color: rgb(74, 74, 99);
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 5px 45px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: blueviolet; 
+    transition: background-color 0.4s ease; 
+
+.navbar a:hover {
+    background-color: rgb(199, 69, 210);
+} */
+
+/*=============== MAIN ==============*/
+
+/* ============= SECTION1 ================*/
+
+.section1{
+  background-color: #e1b328;
+  padding-top: 1px;
+  padding-bottom: 40px;
+  
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  margin: 0 auto 50px;
+  max-width: 1000px;
+}
+
+
+.titulo h1 {
+    font-size: 50px;
+  font-family: "Montserrat";
+  color: #000;
+  font-weight: 600;
+    
+}
+
+.inline{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.conteudo-esquerda{
+ flex: 1;
+  min-width: 300px;
+}
+
+.beneficios {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  margin-left: 0;
+}
+
+.beneficios .text h2 {
+    margin: 0;
+    font-size: 32px;
+    
+}
+
+.beneficios .text p {
+   margin: 0.5rem 0 0 0;
+   font-size: 20px;
+    max-width: 500px;
+    color: rgb(62, 68, 68);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.beneficios svg {
+    stroke: rgb(30, 74, 250);
+    width: 80px;
+    height: 80px;
+}
+
+.conteudo-direita{
+    flex-shrink: 0;
+}
+
+.botao {
+    background-color: #25D366; /* cor do WhatsApp */
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.botao:active{
+    color:rgb(237, 255, 34);
+}
+
+
+.imgzap {
+    width: 30px;
+    height: 30px;
+}
+
+
+.picture{
+    height: 700px;
+  width: auto;
+  object-fit: cover;
+}
+
+
+
+/* ========= SECTION 2 =============*/
+
+.title  h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.nssservices h2{
+  font-size: 60px;
+  background-color: #e3fc09;
+  padding: 40px;
+}
+
+.servico .trecho1, .trecho2, .trecho3{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 0px;
+}
+
+.trecho1 h3, .trecho2 h3, .trecho3 h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7f978a;
+    
+}
+
+.trecho1 > p, .trecho2 > p, .trecho3 > p{
+    background-color: #385442;
+}
+
+
+/*========= SECTION3 ==============*/
+
+.videoyt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    gap: 20px;
+    background-color: black;
+    padding: 30px 0 60px 0;
+    
+}
+
+.videoyt h2 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+/*.videoyt iframe {
+    width: 80%; 
+    max-width: 900px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+} */
+
+.testimonial h1, h2, h3, h4 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+}
+
+.testimonial img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonial a {
+    text-decoration: none;
+}
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.video-swiper {
+  
+  overflow: hidden;
+ 
+  position: relative;
+}
+
+.video-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-swiper .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  
+}
+
+.video-swiper iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* Botões de navegação centralizados verticalmente */
+.video-swiper .swiper-button-prev,
+.video-swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Ajusta posicionamento */
+.video-swiper .swiper-button-prev {
+  left: 10px;
+}
+.video-swiper .swiper-button-next {
+  right: 10px;
+}
+
+/* Esconde paginação, se não quiser usar */
+.video-swiper .swiper-pagination {
+  display: none;
+}
+
+/*=============== TESTIMONIAL CARD ===============*/
+.testimonial {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.testimonial__swiper {
+  padding-bottom: 7rem;
+}
+
+.testimonial__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonial__card {
+  width: 280px;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 16px hsla(265, 75%, 4%, .1);
+  padding: 2rem 1.5rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.testimonial__img {
+  width: 100px;
+  border-radius: 4rem;
+  border: 4px solid var(--first-color);
+  margin: 0 auto .5rem;
+}
+
+.testimonial__name {
+  font-size: var(--h3-font-size);
+  margin-bottom: 2rem;
+}
+
+.testimonial__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: .75rem;
+}
+
+.testimonial__stars {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.testimonial__stars i {
+  font-size: 1rem;
+  color: var(--second-color);
+}
+
+.testimonial__number {
+  font-size: var(--h3-font-size);
+}
+
+/* Swiper class */
+.testimonial .swiper-pagination-bullets {
+  bottom: 4rem;
+}
+
+.testimonial .swiper-pagination-bullet {
+  background-color: var(--first-color);
+  transition: opacity .4s;
+}
+
+.testimonial .swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.testimonial .swiper-button-next {
+  right: calc(50% - 3rem);
+}
+
+.testimonial .swiper-button-prev::after, 
+.testimonial .swiper-button-next::after {
+  content: "";
+}
+
+.testimonial :is(.swiper-button-prev, .swiper-button-next) {
+  top: initial;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 300px) {
+  .testimonial__title {
+    font-size: 1.25rem;
+  }
+  .testimonial__card {
+    width: 240px;
+    padding-inline: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 640px) {
+  .testimonial__swiper {
+    max-width: 640px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .testimonial__swiper {
+    max-width: 760px;
+  }
+  .testimonial__title {
+    margin-bottom: 4rem;
+  }
+  .testimonial__card {
+    width: 330px;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+  }
+  .testimonial__number {
+    font-size: var(--normal-font-size);
+  }
+}
+
+/*========== SECTION 4 ===========*/
+
+.qmsomos{
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+
+}
+
+.contatos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 12px;
+  
+  
+}
+
+.coluna{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hatemdimento {
+  max-width: 50%;
+  max-width: 500px;
+  
+}
+
+
+.mapa iframe {
+  width: 1000px;
+  max-width: 5000px;
+  height: 500px;
+  
+}
+
+.mapa figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.insta-btn {
+    background-color: #c07691; /* cor do WhatsApp */
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.insta-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.yt-btn {
+    background-color: #df0808; /* cor do WhatsApp */
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.yt-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.facebook-btn {
+    background-color: #1c0dec; /* cor do WhatsApp */
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.facebook-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.x-btn {
+    background-color: #000000; /* cor do WhatsApp */
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 60px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.x-btn:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.fixo{
+    position: fixed;
+   bottom: 20px;       /* distância da parte inferior da janela */
+    right: 20px;        /* distância da borda direita da janela */
+    z-index: 9999;      /* garante que o botão fique sobre outros elementos */
+}
