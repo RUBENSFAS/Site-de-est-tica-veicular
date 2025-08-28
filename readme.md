@@ -14,3 +14,8 @@ RIEN
 05/08/2025
 A parte estrutural foi, agr é só o css 
 
+28/08/2025 10:09 Ja era pra ter terminado, por falta de noção estética, vou deixar com essas cores, falta apenas a parte de contatos e o rodapé da página.
+
+28/08/2025 11:01
+
+dei uma leve mexida no contatos e posteriormente mexerei no rodapé pra deixar pelo menos visivel.
