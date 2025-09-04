@@ -19,3 +19,7 @@ A parte estrutural foi, agr é só o css
 28/08/2025 11:01
 
 dei uma leve mexida no contatos e posteriormente mexerei no rodapé pra deixar pelo menos visivel.
+
+04/09/2025 10:40
+
+adicionado uma estilização basica no rodapé, sendo sincero não sei mais o que implementar, no maximo ajustar um espaçamento aqui e ali mas é isso

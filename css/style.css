@@ -606,6 +606,7 @@ body{
 .column{
   display: flex;
   flex-direction: column;
+  justify-content: left;
 }
 
 .yt-btn {
@@ -679,6 +680,16 @@ body{
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+.x-btn, .facebook-btn, .yt-btn, .insta-btn{
+  margin-bottom: 20px;
+
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 40px;
+	text-align: left;
+}
 
 .fixo{
     position: fixed;
@@ -686,3 +697,4 @@ body{
     right: 20px;        /* distância da borda direita da janela */
     z-index: 9999;      /* garante que o botão fique sobre outros elementos */
 }
+
